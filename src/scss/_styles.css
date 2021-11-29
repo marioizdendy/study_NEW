@@ -959,6 +959,11 @@ a.teachers-more {
   font-size: 22px;
   line-height: 33px;
   color: #2E3D4B;
+  text-align: center;
+}
+
+.modal-row {
+  width: 100%;
 }
 
 .modal-header {
@@ -968,7 +973,7 @@ a.teachers-more {
 .modal-header .close {
   float: right;
   font-size: 2.5rem;
-  margin: -1.5rem -6rem -1rem auto;
+  margin: -2rem -2.5rem 0 0;
 }
 
 .modal-content-wrapper {
@@ -976,6 +981,13 @@ a.teachers-more {
   padding: 20px 10px 20px 10px;
   border-radius: 5px;
   margin: -15px 1px 0 1px;
+}
+
+.modal-content-item {
+  border: 1px solid #E3E3E3;
+  padding: 20px 10px 20px 10px;
+  border-radius: 5px;
+  margin: 20px 1px 0 1px;
 }
 
 .modal-dates {
@@ -1035,6 +1047,50 @@ a.teachers-more {
 .btn-submit-modal:hover,
 .btn-close-modal:hover {
   opacity: 90%;
+}
+
+.into-modal-button {
+  border: none;
+  background: none;
+}
+.into-modal-button :hover {
+  background: #bdbdbd;
+  border-radius: 3px;
+}
+.into-modal-button :active,
+.into-modal-button :focus {
+  border-radius: 3px;
+}
+.into-modal-button img {
+  max-width: 42px;
+  max-height: 42px;
+  width: 100%;
+}
+
+.peak-teacher-dropdown {
+  width: 100%;
+  outline: 0;
+}
+.peak-teacher-dropdown button {
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: none;
+  color: #000;
+  opacity: 0.4;
+  outline: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+.peak-teacher-dropdown button:hover,
+.peak-teacher-dropdown button:active,
+.peak-teacher-dropdown button:focus {
+  background: #3a9bf4;
+  color: #fff;
+  outline: 0;
+  outline-offset: 0;
+  opacity: 100%;
+  border-color: #3a9bf4;
 }
 
 @media (max-width: 1250px) {
@@ -1137,6 +1193,10 @@ a.teachers-more {
   .modal-teacher {
     margin-top: 30px;
   }
+
+  .into-modal-button {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 768px) {
   .pl-available-buttons {
@@ -1155,12 +1215,6 @@ a.teachers-more {
   .pl-nav-link {
     font-size: 14px;
     padding: 6px;
-  }
-
-  .modal-header .close {
-    float: right;
-    font-size: 2.5rem;
-    margin: -2rem -1rem -1rem auto;
   }
 
   .modal-dialog {
@@ -1439,5 +1493,9 @@ a.teachers-more {
   .btn-submit-modal,
 .btn-close-modal {
     flex: 1 1 auto;
+  }
+
+  .into-modal-button {
+    margin-top: 45px;
   }
 }

@@ -976,7 +976,13 @@ a.teachers-more {
         font-size: 22px;
         line-height: 33px;
         color: #2E3D4B;
+        text-align: center;
     }
+
+
+.modal-row {
+    width: 100%;
+}
 
 .modal-header {
     justify-content: center;
@@ -984,7 +990,7 @@ a.teachers-more {
     .close {
         float: right;
         font-size: 2.5rem;
-        margin: -1.5rem -6rem -1rem auto;
+        margin: -2rem -2.5rem 0 0;
     }
 }
 
@@ -993,6 +999,13 @@ a.teachers-more {
     padding: 20px 10px 20px 10px;
     border-radius: 5px;
     margin: -15px 1px 0 1px;
+}
+
+.modal-content-item {
+    border: 1px solid #E3E3E3;
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;
+    margin: 20px 1px 0 1px;
 }
 
 .modal-dates {
@@ -1052,6 +1065,50 @@ a.teachers-more {
 .btn-submit-modal:hover,
 .btn-close-modal:hover {
     opacity: 90%;
+}
+
+.into-modal-button {
+    border: none;  
+    background: none;
+    :hover {
+        background: #bdbdbd;
+        border-radius: 3px;
+    }
+    :active,
+    :focus {
+        border-radius: 3px;
+    }
+    img {
+        max-width: 42px;
+        max-height: 42px;
+        width: 100%;
+    }
+}
+
+.peak-teacher-dropdown {
+        width: 100%;
+        outline: 0;
+    button {
+        border: 1px solid #000;
+        border-radius: 5px;
+        background: none;
+        color: #000;
+        opacity: 0.4;
+        outline: 0;
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+    }
+    button:hover,
+    button:active,
+    button:focus {
+        background: $primary-color;
+        color: #fff;
+        outline: 0;
+        outline-offset: 0;
+        opacity: 100%;
+        border-color: $primary-color;
+    }
 }
 
 
@@ -1149,6 +1206,9 @@ a.teachers-more {
     .modal-teacher {
         margin-top: 30px;
     }
+    .into-modal-button {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1168,13 +1228,7 @@ a.teachers-more {
         font-size: 14px;
         padding: 6px;
     }
-    .modal-header {
-        .close {
-            float: right;
-            font-size: 2.5rem;
-            margin: -2rem -1rem -1rem auto;
-        }
-    }
+    
     .modal-dialog {
         max-width: auto;
         width: auto;
@@ -1439,5 +1493,8 @@ a.teachers-more {
     .btn-submit-modal,
     .btn-close-modal {
         flex: 1 1 auto;
+    }
+    .into-modal-button {
+        margin-top: 45px;
     }
 }
