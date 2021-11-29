@@ -473,6 +473,7 @@ a.teachers-more {
 .btn-holder {
     display: flex;
     flex-direction: row;
+    margin-top: 4px;
 }
 
 .btn-holder button {
@@ -487,7 +488,7 @@ a.teachers-more {
 
 .teacher-btn-holder button {
     max-height: 25px;
-    margin-top: 6px;
+    margin-top: 7px;
     margin-left: 30px;
 }
 
@@ -1188,6 +1189,27 @@ a.teachers-more {
         margin-bottom: 20px;
         max-width: unset;
     }
+    .teacher-stats {
+        .stars {
+            margin: -1px 10px 0 0;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .stars-count {
+            font-size: 14px;
+            margin-right: 30px;
+        }
+        .teacher-exp,
+        .teacher-amount {
+            margin-top: 1px;
+            font-size: 12px;
+        } 
+    }
+    .teacher-service {
+        p {
+            font-size: 14px;
+        }
+    }
     .teacher-costs,
     .lesson-duration {
         font-size: 10px;
@@ -1215,9 +1237,13 @@ a.teachers-more {
         max-width: 120px;
         font-size: 11px;
     }
-    .nav-tabs {
-        font-size: 10px;
+    
+    .teacher-pr-tbs {
+        a { 
+            font-size: 10px;    
+           }
     }
+
     .empty-tab-wrapper {
         margin-top: 20px;
         p {
@@ -1228,6 +1254,59 @@ a.teachers-more {
             font-size: 14px;
         }
     }
+    .about-teacher-tab p {
+        padding-right: 0;
+    }
+    .tab-holder {
+        h1 {
+            font-size: 14px;
+        }
+    }
+
+    .rating { 
+        .stars {
+            margin: -1px 2px 0 10px;
+        }
+        p {
+            font-size: 12px;
+            margin: 2px 0 0 12px;
+        }
+    }
+
+    .rating {
+        margin-bottom: -30px;
+    }
+
+    .feedback-holder {
+        margin-left: -15px;
+        h1 {
+            font-size: 12px;
+        }
+    }
+    .feedback-items {
+        margin-top: 40px;
+    }
+    .student-grade {
+        margin-top: -10px;
+        p {
+            font-size: 12px;
+        }
+        .stars {
+            font-size: 12px;
+            margin: -1px 0 0 10px;
+        }
+    }
+    .student-feeback p {
+        margin-top: -10px;
+    }
+    .students-feedback-wrapper {
+        margin: -20px -50px 0 -50px;
+    }
+    .teacher-btn-holder button {
+        font-size: 14px;
+    }
+
+
     .cabinet-tab-holder {
         min-height: 300px;
     }
